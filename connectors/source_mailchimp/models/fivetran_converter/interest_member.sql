@@ -4,5 +4,5 @@ with interest_expanded as (SELECT
     value::boolean AS interested
 FROM
     "reporting"."mailchimp"."list_members",
-    LATERAL jsonb_each(interests))
+    LATERAL jsonb_each(interests::jsonb))
     select interest_id, member_id from interest_expanded where interested = true
