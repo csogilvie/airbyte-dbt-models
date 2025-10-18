@@ -32,3 +32,4 @@ select
   {% endif %}
 
 from unionned
+where account_id is not null
