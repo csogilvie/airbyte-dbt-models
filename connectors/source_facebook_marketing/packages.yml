@@ -6,4 +6,4 @@ packages:
     version: 1.3.0
 
   - package: fivetran/facebook_ads
-    version: ['>=0.7.0', '<0.8.0']
+    version: ['>=0.7.0', '<=0.10.0']
